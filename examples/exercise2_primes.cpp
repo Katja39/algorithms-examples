@@ -30,5 +30,5 @@ void exercise2_primes() {
 		std::cout << prime[i]<<" ";
 		}
 	}
-	std::cout << "\n";
+	std::cout << std::endl;
 }

@@ -17,7 +17,7 @@ void exercise1_root() {
 
 	double stop = 0.0001;
 
-	while (abs(xOld - xNew) > stop) //abs = Betrag
+	while (abs(xOld - xNew) > stop)
 	{
 		xOld = xNew;
 		xNew = ((root - 1.0) * pow(xOld, root) + number) / (root * pow(xOld, root - 1));

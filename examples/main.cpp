@@ -14,9 +14,9 @@ int main() {
 
 	while (e == 0) {
 	std::cout << "Choose algorithm:\n"
-			  <<"1: Root\n"
-			  <<"2: Primes\n"
-			  <<"3: Pi\n"
+			  <<"1: Root (Herons method)\n"
+			  <<"2: Primes (Sieve of Eratosthenes)\n"
+			  <<"3: Pi (test roundoff error)\n"
 		      <<"4: Integral\n" 
 			  <<"5: Lineare Regression\n"
 			  <<"6: Differentialgleichungen\n"
