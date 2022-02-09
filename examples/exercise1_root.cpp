@@ -1,30 +1,32 @@
 #include <iostream>;
 #include <cmath>
 
+//Herons method
 void exercise1_root() {
-	int number; //positive number
-	std::cout << "Positive Zahl: "<< std::endl;
-	std::cin >> number;
-	int wurzel;
-	std::cout << "\nWurzel: " << std::endl;
-	std::cin >> wurzel;
 
-	if (number > 0 && wurzel>0) {
+	int number; //positive number
+	std::cout << "Positive number: "<< std::endl;
+	std::cin >> number;
+	int root;
+	std::cout << "\Root: " << std::endl;
+	std::cin >> root;
+
+	if (number>0 && root>0) {
 	double xNew = 10;
 	double xOld = 1;
 
-	double abbruch = 0.0001;
+	double stop = 0.0001;
 
-	while (abs(xOld - xNew) > abbruch) //abs = Betrag
+	while (abs(xOld - xNew) > stop) //abs = Betrag
 	{
 		xOld = xNew;
-		xNew = ((wurzel - 1) * pow(xOld, wurzel) + number) / (wurzel * pow(xOld, wurzel - 1));
+		xNew = ((root - 1.0) * pow(xOld, root) + number) / (root * pow(xOld, root - 1));
 	}
 
-	std::cout <<"\n" << wurzel << ". Wurzel von " << number << " = " << xNew <<"\n" << std::endl;
+	std::cout <<"\n" << root << ". root of " << number << " = " << xNew <<"\n" << std::endl;
 	}
 	else {
-		std::cout << "Falsche Eingabe";
+		std::cout << "Incorrect input";
 	}
 
 }
