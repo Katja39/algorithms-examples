@@ -3,7 +3,7 @@
 #include "exercise2_primes.h";
 #include "exercise3_pi.h";
 #include "exercise4_integral.h";
-//#include "linearRegression.h";
+#include "exercise5_linearRegression.h";
 //#include "differential.h";
 //#include "linearSystemOfEquations.h";
 //#include "linearSystemOfEquations2.h";
@@ -36,7 +36,7 @@ int main() {
 		break;
 	case 4: exercise4_integral();
 		break;
-	//case 5:linearRegression();//TODO
+	case 5:exercise5_linearRegression();
 		break;
 	//case 6:differential();
 		break;
