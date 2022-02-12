@@ -4,7 +4,7 @@
 #include "exercise3_pi.h";
 #include "exercise4_integral.h";
 #include "exercise5_linearRegression.h";
-//#include "differential.h";
+#include "exercise6_differentialEquation.h";
 //#include "linearSystemOfEquations.h";
 //#include "linearSystemOfEquations2.h";
 
@@ -18,8 +18,8 @@ int main() {
 			  <<"2: Primes (Sieve of Eratosthenes)\n"
 			  <<"3: Pi (test roundoff error)\n"
 		      <<"4: Integral\n" 
-			  <<"5: Lineare Regression\n"
-			  <<"6: Differentialgleichungen\n"
+			  <<"5: Linear Regression\n"
+			  <<"6: Differential Equation\n"
 			  <<"7: Lineares Gleichungssystem\n"
 			  <<"8: Lineares Gleichungssystem2\n"
 			  <<"9: Exit"
@@ -38,7 +38,7 @@ int main() {
 		break;
 	case 5:exercise5_linearRegression();
 		break;
-	//case 6:differential();
+	case 6:exercise6_differentialEquation();
 		break;
 	//case 7:linearSystemOfEquations();//TODO
 		break;
