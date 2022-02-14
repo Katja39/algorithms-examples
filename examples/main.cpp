@@ -6,7 +6,7 @@
 #include "exercise5_linearRegression.h";
 #include "exercise6_differentialEquation.h";
 #include "exercise7_linearSystemOfEquations.h";
-//#include "linearSystemOfEquations2.h";
+#include "exercise8_linearSystemOfEquations2.h";
 
 int main() {
 	int n;
@@ -21,7 +21,7 @@ int main() {
 			  <<"5: Linear Regression\n"
 			  <<"6: Differential Equation\n"
 			  <<"7: Linear System of Equations (TODO, but correct result)\n"
-			  <<"8: Lineares Gleichungssystem2\n"
+			  <<"8: Linear System of Equations (Jacobi, Gauss-Seidel)\n"
 			  <<"9: Exit"
 			  <<std::endl;
 	std::cin >> n;
@@ -42,7 +42,7 @@ int main() {
 		break;
 	case 7:exercise7_linearSystemOfEquations();//TODO
 		break;
-	//case 8:linearSystemOfEquations2();//TODO
+	case 8:exercise8_linearSystemOfEquations2();
 		break;
 	case 9:e = 1;
 		break;
