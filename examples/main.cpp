@@ -5,7 +5,7 @@
 #include "exercise4_integral.h";
 #include "exercise5_linearRegression.h";
 #include "exercise6_differentialEquation.h";
-//#include "linearSystemOfEquations.h";
+#include "exercise7_linearSystemOfEquations.h";
 //#include "linearSystemOfEquations2.h";
 
 int main() {
@@ -20,7 +20,7 @@ int main() {
 		      <<"4: Integral\n" 
 			  <<"5: Linear Regression\n"
 			  <<"6: Differential Equation\n"
-			  <<"7: Lineares Gleichungssystem\n"
+			  <<"7: Linear System of Equations (TODO, but correct result)\n"
 			  <<"8: Lineares Gleichungssystem2\n"
 			  <<"9: Exit"
 			  <<std::endl;
@@ -40,7 +40,7 @@ int main() {
 		break;
 	case 6:exercise6_differentialEquation();
 		break;
-	//case 7:linearSystemOfEquations();//TODO
+	case 7:exercise7_linearSystemOfEquations();//TODO
 		break;
 	//case 8:linearSystemOfEquations2();//TODO
 		break;
