@@ -1,6 +1,5 @@
 #include <iostream>;
 
-
 using namespace std;
 
 void exercise8_linearSystemOfEquations2() {

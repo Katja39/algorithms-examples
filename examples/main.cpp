@@ -7,6 +7,7 @@
 #include "exercise6_differentialEquation.h";
 #include "exercise7_linearSystemOfEquations.h";
 #include "exercise8_linearSystemOfEquations2.h";
+#include "exercise9_nonlinearOptimization.h";
 
 int main() {
 	int n;
@@ -22,7 +23,8 @@ int main() {
 			  <<"6: Differential Equation\n"
 			  <<"7: Linear System of Equations (TODO, but correct result)\n"
 			  <<"8: Linear System of Equations (Jacobi, Gauss-Seidel)\n"
-			  <<"9: Exit"
+			  <<"9: Nonlinear Optimization (DownhillSimplex,Gradient descent)\n"
+			  <<"10: Exit"
 			  <<std::endl;
 	std::cin >> n;
 	
@@ -44,7 +46,8 @@ int main() {
 		break;
 	case 8:exercise8_linearSystemOfEquations2();
 		break;
-	case 9:e = 1;
+	case 9:exercise9_nonlinearOptimization();
+	case 10: e = 1;
 		break;
 	}
 	}
