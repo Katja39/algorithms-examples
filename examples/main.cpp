@@ -8,13 +8,15 @@
 #include "exercise7_linearSystemOfEquations.h";
 #include "exercise8_linearSystemOfEquations2.h";
 #include "exercise9_nonlinearOptimization.h";
+#include "exercise15_zero.h";
 
 int main() {
 	int n;
 	int e=0;
 
 	while (e == 0) {
-	std::cout << "Choose algorithm:\n"
+	std::cout << "----------------------\n"
+			  << "Choose algorithm:\n"
 			  <<"1: Root (Herons method)\n"
 			  <<"2: Primes (Sieve of Eratosthenes)\n"
 			  <<"3: Pi (test roundoff error)\n"
@@ -24,10 +26,18 @@ int main() {
 			  <<"7: Linear System of Equations (TODO, but correct result)\n"
 			  <<"8: Linear System of Equations (Jacobi, Gauss-Seidel)\n"
 			  <<"9: Nonlinear Optimization (DownhillSimplex,Gradient descent)\n"
-			  <<"10: Exit"
+			  <<"10: TODO\n"
+			  <<"11: TODO\n"
+			  <<"12: TODO\n"
+			  <<"13: TODO\n"
+			  <<"14: TODO\n"
+			  <<"15: Zero of a function\n"
+			  <<"16: Exit\n"
+			  << "----------------------"
 			  <<std::endl;
 	std::cin >> n;
-	
+	std::cout << "\n";
+
 	switch (n)
 	{
 	case 1:exercise1_root();
@@ -47,8 +57,10 @@ int main() {
 	case 8:exercise8_linearSystemOfEquations2();
 		break;
 	case 9:exercise9_nonlinearOptimization();
-	case 10: e = 1;
 		break;
+	case 15: Zero();
+		break;
+	case 16: e = 1;
 	}
 	}
 	return 0;
