@@ -8,6 +8,8 @@
 #include "exercise7_linearSystemOfEquations.h";
 #include "exercise8_linearSystemOfEquations2.h";
 #include "exercise9_nonlinearOptimization.h";
+#include "exercise10_simulatedAnnealing.h";
+#include "exercise11_minimalSpanningtreePrim.h"
 #include "exercise15_zero.h";
 
 int main() {
@@ -23,11 +25,11 @@ int main() {
 		      <<"4: Integral\n" 
 			  <<"5: Linear Regression\n"
 			  <<"6: Differential Equation\n"
-			  <<"7: Linear System of Equations (TODO, but correct result)\n"
+			  <<"7: Linear System of Equations\n"
 			  <<"8: Linear System of Equations (Jacobi, Gauss-Seidel)\n"
 			  <<"9: Nonlinear Optimization (DownhillSimplex,Gradient descent)\n"
-			  <<"10: TODO\n"
-			  <<"11: TODO\n"
+			  <<"10: Simulated Annealing\n"
+			  <<"11: Minimal Spanningtree, Prim\n"
 			  <<"12: TODO\n"
 			  <<"13: TODO\n"
 			  <<"14: TODO\n"
@@ -52,11 +54,15 @@ int main() {
 		break;
 	case 6:exercise6_differentialEquation();
 		break;
-	case 7:exercise7_linearSystemOfEquations();//TODO
+	case 7:exercise7_linearSystemOfEquations();
 		break;
 	case 8:exercise8_linearSystemOfEquations2();
 		break;
 	case 9:exercise9_nonlinearOptimization();
+		break;
+	case 10:exercise10_simulatedAnnealing();
+		break;
+	case 11:exercise11_minimalSpanningtree();
 		break;
 	case 15: Zero();
 		break;

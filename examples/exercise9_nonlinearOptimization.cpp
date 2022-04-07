@@ -4,7 +4,7 @@ using namespace std;
 
 void exercise9_nonlinearOptimization() {
 
-	cout << "\nGradient descent for f(x,y)=x^2+y^2\n";
+	cout << "Gradient descent for f(x,y)=x^2+y^2\n";
 
 	double x[2] = { 0, 0 };
 	double xOld[2] = { 1,1 };
@@ -47,9 +47,9 @@ void exercise9_nonlinearOptimization() {
 	double B[2] = { 1,2 };		// 5
 	double C[2] = { 3,1 };		// 10
 
-	double xS = 10; //schlechtester Punkt
+	double xS = 10; //worst point
 	double xA = 5; 
-	double xB = 4; //bester Punkt
+	double xB = 4; //best point
 
 	size = 3;
 	double e=0;
@@ -94,8 +94,5 @@ void exercise9_nonlinearOptimization() {
 		}
 	}
 	i++;
-	} while (i<10);//TODO Abbruch+Ausgabe
-
-	
-
+	} while (i<10);//TODO Abbruch
 }

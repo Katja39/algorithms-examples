@@ -69,7 +69,7 @@ void exercise7_linearSystemOfEquations() {
 		}
 		temp = 1;
 	}
-	std::cout << "\ny1 = " << y1 << "\ny2 = " << y2 << "\ny3 = " << y3;
+	std::cout << "\n\ny1 = " << y1 << "\ny2 = " << y2 << "\ny3 = " << y3;
 	
 	//2) backward substitution //TODO
 	int y[3] = {y1,y2,y3};
